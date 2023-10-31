@@ -42,8 +42,8 @@ def butter_bandpass_filter(data, lowcut, highcut, fs, order=5):
     y = lfilter(b, a, data)
     return y
 
-lowcut = 0.5  # Lower cutoff frequency in Hz
-highcut = 4.0  # Upper cutoff frequency in Hz
+lowcut = 12.5  # Lower cutoff frequency in Hz (Beta band)
+highcut =  28.5 # Upper cutoff frequency in Hz
 fs = 1000  # Sampling frequency in Hz
 order = 6  # Filter order
 
